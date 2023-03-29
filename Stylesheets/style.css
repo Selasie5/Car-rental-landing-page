@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;800&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+.note-container
+{
+    background: #1a1e23;
+    height: 6vh;
+}
+.access-now
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin-inline: 7rem;
+    padding-block: 1rem;
+}
+.access-now p{
+    color: white;
+}
+.access-now a
+{
+    color: #fff;
+}
+.access-now a:hover{
+    color: #cd1d1d;
+}
+header
+{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-inline: 5rem;
+    padding-block: 1rem;
+}
+header h1{
+    color: #1a1e23;
+    text-transform: uppercase;
+    display: flex;
+    align-self: center;
+    font-size: 1.8em;
+    font-family: General 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+nav{
+    align-self: center;
+    justify-content: space-between;
+}
+nav a{
+    color: #1a1e23;
+    text-decoration: none;
+    font-weight: light;
+    font-size: 0.9rem;
+    padding: 1rem;
+}
+a:hover
+{
+    color: #cd1d1d;
+    transition: 0.6s ease-in-out;
+    font-weight: bolder;
+}
+.menu-open
+{
+    font-size: 2.5rem;
+    display: none;
+}
+.transparent-background
+{
+    display: none;
+}
+.mobile-nav
+{
+    display: none;
+}
+button{
+    padding: 1rem;
+    background-color: #cd1d1d;
+    border: 1px solid transparent;
+    color: #fff;
+    padding-inline: 0.8rem;
+}
+button:hover{
+    background-color: #fff;
+    color: #cd1d1d;
+    border: 1px solid #cd1d1d;
+    transition: 0.6s ease-in-out;
+}
+button:hover .fa-apple
+{
+    color: #cd1d1d;
+}
+.fa-apple
+{
+    color: #fff;
+    padding-inline: 0.4rem;
+}
+#mobile-btn
+{
+    display: none;
+}
+
+/**Hero Section**/
+main{
+    margin-inline: 5rem;
+}
+.hero-section
+{
+    padding-block: 4rem;
+    margin-inline: auto;
+}
+.hero-content
+{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-between;
+    align-self: center;
+}
+.hero-text
+{
+    align-self: center;
+    
+}
+.hero-text p{
+    padding-block: 1rem;
+    color: #8888;
+    line-height: 1.5rem;
+}
+.hero-text h2{
+    color: #1a1e23;
+    font-size: 2.0rem;
+    font-weight: 700;
+}
+.hero-content img{
+    border-radius: 90px 190px 90px;
+}
+.book-btn
+{
+    padding: 1rem;
+    gap: 0.3rem;
+    box-shadow: 0.5px 0.5px 0.5px #1a1e23;
+}
+.fa-phone
+{
+    margin-left: 0.4rem;
+}
+.hero-text a{
+    padding-inline: 2rem;
+    color: #1a1e23;
+}
+.hero-text a:hover{
+    color:#cd1d1d;
+}
+/**About Us Section**/
+.about-section
+{
+        margin-block: 9rem;
+        margin-inline: 0.5rem;
+}
+.about-content
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.about-content img{
+    box-shadow: 1px 1px 1px #1a1e23;
+    border-radius: 10px;
+    width: 550px;
+    height: 400px;
+}
+.about-text
+{
+    padding: 8rem;
+   padding-block: 3.5rem;
+   margin-right: 4rem !important;
+   
+}
+.about-text  h2{
+    color: #cd1d1d;
+}
+.about-text p{
+    padding-block: 1rem;
+    color: #40303088;
+    width: 100%;
+}
+.fa-arrow-right
+{
+    margin-left: 1rem;
+}
+
+/**Mobile Display Stylesheet**/
+@media screen and  (max-width: 768px) {
+    .note-container
+    {
+        height: 12vh;
+        padding-block: 1rem;
+        display: none;
+    }
+    .access-now
+    {
+        margin-inline: auto;
+        font-size: 1rem;
+        padding: 2rem;
+        padding-inline: 0rem;
+        padding-block: 0rem;
+    }
+    .access-now a{
+        padding-inline: 0rem; 
+        width: 50%;
+        padding-block: 1rem;
+    }
+    header
+    {
+        margin-inline: 2.2rem;
+    }
+    .desktop-nav
+    {
+        display: none;
+    }
+    #desktop-btn
+    {
+        display: none;
+    }
+    .menu-open
+    {
+        display: block;
+        font-size: 2.5rem;
+        font-weight: bolder;
+        transform: translateY(-7%);
+    }
+    .transparent-background
+    {
+        background: #fff;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+        height: 100%;
+         width: 100%;
+    }
+    .mobile-nav-container
+    {
+        background-color: rgba(211, 44, 63, 1);
+        color: #fff;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 70%;
+        display: block;
+    }
+    .mobile-nav{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+    .mobile-nav a{
+        color: #fff;
+        font-weight: 400;
+        font-size: 1.3rem;
+    }
+    .mobile-nav a:hover{
+        font-weight: 500;
+    }
+    .fa-apple
+    {
+        color: #cd1d1d
+    }
+    #mobile-btn
+    {
+        display: block;
+        padding-block: 2rem;
+        color: #cd1d1d;
+        font-size: 1em;
+        background: #fff;
+        padding: 1rem;
+        margin-top: 30px;
+        margin-left: 1rem;
+    }
+    .menu-close
+    {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 2vh;
+        margin-right: 1rem;
+        font-size: 2.5rem;
+    }
+    main 
+    {
+        padding: 0.5rem;
+        margin-inline: 2.2rem;
+    }
+    .hero-content img
+    {
+        display: none;
+    }
+    .hero-text{
+       padding: 0rem;
+        text-align: center;
+        margin-inline: auto;
+    }
+    .about-content
+    {
+        display: block;
+        align-self: center;
+    }
+    .about-content img
+
+    {
+        width: 80vw;
+        height: 40vh;
+        box-shadow: none;
+        margin-right: 2rem;
+    }
+.about-text
+{
+    margin-block: 2rem;
+    padding: 0rem;
+    width: 350px;
+    margin-right: 3rem;
+}
+}
