@@ -106,7 +106,8 @@ button:hover .fa-apple
 }
 
 /**Hero Section**/
-main{
+.hero-section, .about-section{
+    max-width: 88rem;
     margin-inline: 5rem;
 }
 .hero-section
@@ -161,7 +162,6 @@ main{
 .about-section
 {
         margin-block: 9rem;
-        margin-inline: 0.5rem;
 }
 .about-content
 {
@@ -179,7 +179,6 @@ main{
 {
     padding: 8rem;
    padding-block: 3.5rem;
-   margin-right: 4rem !important;
    
 }
 .about-text  h2{
@@ -194,6 +193,88 @@ main{
 {
     margin-left: 1rem;
 }
+/**Our Services Style**/
+
+.our-services
+{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Assets/images/milad-fakurian-4x3jVxe0PiM-unsplash.jpg);
+    background-size: cover;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.our-services-content
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  gap: 1rem;
+  padding: 3rem;
+  color: white;
+}
+.our-services-content h2{
+    width: 50%;
+    text-align: center;
+    font-size: 2.2rem;
+    line-height: 1.5;
+}
+.our-services-content p{
+    width: 50%;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+    text-align: center;
+    color: #575a5e;
+}
+.services-cards
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    max-width: 78rem;
+    margin-inline: auto;
+}
+.service-card
+{
+   /* border: 2px solid #cd1d1d;*/
+    background: #fff;
+    padding: 2rem 1rem;
+    width: 270px;
+    height: 240px;
+    padding-inline: 2rem;
+    border-top: 0.5rem solid #cd1d1d;
+    box-shadow:  2px #1a1e23;
+}
+.service-card h4{
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding-block: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**Mobile Display Stylesheet**/
 @media screen and  (max-width: 768px) {
@@ -328,4 +409,17 @@ main{
     width: 350px;
     margin-right: 3rem;
 }
+.our-services{
+    background-position: none;
+    background-size: cover;
+    width: 100vw;
+    margin-inline: 0rem;
+}
+.services-cards{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.service-card
+{
+    margin-bottom: 10px;
 }
