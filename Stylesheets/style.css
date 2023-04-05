@@ -194,64 +194,55 @@ button:hover .fa-apple
     margin-left: 1rem;
 }
 /**Our Services Style**/
-
 .our-services
 {
-    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Assets/images/milad-fakurian-4x3jVxe0PiM-unsplash.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Assets/images/milad-fakurian-DWYls-Utk9I-unsplash.jpg);
+    height: 50vh;
     background-size: cover;
-    height: 60vh;
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
 }
 .our-services-content
 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  gap: 1rem;
-  padding: 3rem;
-  color: white;
+  padding-inline: 30rem;
+  text-align: center;
+  color: #fff;
+  padding-block: 2rem;
 }
-.our-services-content h2{
-    width: 50%;
-    text-align: center;
-    font-size: 2.2rem;
+.our-services-content p
+{
     line-height: 1.5;
 }
-.our-services-content p{
-    width: 50%;
-    font-size: 0.9rem;
-    font-weight: 400;
-    line-height: 1.3rem;
-    text-align: center;
-    color: #575a5e;
+.our-services-content h2{
+    padding-block: 1.4rem;
+    font-size: 2rem;
 }
 .services-cards
 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
-    max-width: 78rem;
-    margin-inline: auto;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 3rem;
+   padding-inline: 10rem;
 }
-.service-card
+.service-card{
+    background-color: #fff;
+    width: 250px;
+    height: 220px;
+    border-top: 6px solid #cd1d1d;
+    padding-inline: 1rem;
+    padding-block: 1.5rem;
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+}
+.service-card:hover
 {
-   /* border: 2px solid #cd1d1d;*/
-    background: #fff;
-    padding: 2rem 1rem;
-    width: 270px;
-    height: 240px;
-    padding-inline: 2rem;
-    border-top: 0.5rem solid #cd1d1d;
-    box-shadow:  2px #1a1e23;
+    transform: scale(1.1);
 }
-.service-card h4{
-    font-weight: 500;
-    font-size: 1.5rem;
-    padding-block: 1rem;
+.service-card h2{
+    font-size: 3rem;
 }
+
 
 
 
@@ -375,9 +366,9 @@ button:hover .fa-apple
         margin-right: 1rem;
         font-size: 2.5rem;
     }
-    main 
+    .hero-section
     {
-        padding: 0.5rem;
+        
         margin-inline: 2.2rem;
     }
     .hero-content img
@@ -389,37 +380,36 @@ button:hover .fa-apple
         text-align: center;
         margin-inline: auto;
     }
-    .about-content
+    .about-section
     {
-        display: block;
-        align-self: center;
+        margin-inline: 2.2rem;
+    }
+    .about-content{
+        grid-template-columns: 1fr;
+        
     }
     .about-content img
 
     {
         width: 80vw;
         height: 40vh;
-        box-shadow: none;
-        margin-right: 2rem;
     }
-.about-text
-{
-    margin-block: 2rem;
-    padding: 0rem;
-    width: 350px;
-    margin-right: 3rem;
-}
-.our-services{
-    background-position: none;
-    background-size: cover;
-    width: 100vw;
-    margin-inline: 0rem;
-}
-.services-cards{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-.service-card
-{
-    margin-bottom: 10px;
+    .about-text{
+        padding: 0rem;
+        margin-inline: 0rem;
+
+    }
+    .our-services-content
+    {
+        padding-inline: 0.5rem;
+        color: #fff;
+    }
+    .services-cards
+    {
+        grid-template-columns: 1fr;
+    }
+    .services-cards
+    {
+        padding-inline: 4rem;
+    }
 }
