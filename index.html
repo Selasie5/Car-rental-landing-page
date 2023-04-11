@@ -90,7 +90,7 @@
     </div>
 </section>
 <!--Services Section-->
-<section class="our-services">
+<section class="our-services" id="services">
     <div class="our-services-content">
         <h3>Our Services</h3>
         <h2>We provide you with the most exclusive rental services</h2>
@@ -115,16 +115,16 @@
     </div>
 </section>
 <!--Car Collection Section-->
-<section class="collection-section">
+<section class="collection-section" id="collectionsSection">
     <div class="collection-header">
         <h3>Collection</h3>
         <h2>Our Collection Cars</h2>
     </div>
     <div class="collection-nav">
-        <a href="#" class="nav-link"><span class="dot-checker">.</span> Popular</a>
-        <a href="#"><span class="dot-checker">.</span> Large car</a>
-        <a href="#"><span class="dot-checker">.</span> Small cars</a>
-        <a href="#"><span class="dot-checker">.</span> Exclusive cars</a>
+        <a href="#" id="popularLink" data-type="popular-cars"><span class="dot-checker">.</span> Popular</a>
+        <a href="#" id="largeLink" data-type="large-cars"><span class="dot-checker">.</span> Large car</a>
+        <a href="#" id="smallLink" data-type="small-cars"><span class="dot-checker">.</span> Small cars</a>
+        <a href="#" id="exclusiveLink" data-type="exclusive-cars"><span class="dot-checker">.</span> Exclusive cars</a>
     </div>
     <div class="filter-section">
        <i class="fa fa-filter" aria-hidden="true"></i>
@@ -136,8 +136,9 @@
         </select>
     </div>
     <!--Cars being rented-->
-    <div class="cars collection-1">
-        <div class="car large-cars">
+    <!--Poopular cars-->
+    <div class="cars collection-1" id="popular-cars">
+        <div class="car">
             <div class="car-img-container">
                 <img src="./Assets/images/cruiser.jpg"alt="">
             </div>
@@ -164,7 +165,7 @@
                     </button>
             </div>
         </div>
-        <div class="car exclusive-cars">
+        <div class="car">
             <div class="car-img-container">
                 <img src="./Assets/images/amg.jpg"alt="">
             </div>
@@ -191,7 +192,7 @@
                     </button>
             </div>
         </div>
-        <div class="car exclusive-cars">
+        <div class="car">
             <div class="car-img-container">
                 <img src="./Assets/images/2022-range-rover-sv.jpg"alt="">
             </div>
@@ -218,7 +219,7 @@
                     </button>
             </div>
         </div>
-        <div class="car small-cars">
+        <div class="car">
             <div class="car-img-container">
                 <img src="./Assets/images/bmw-2series.jpg"alt="">
             </div>
@@ -300,10 +301,542 @@
             </div>
         </div>
     </div>
+
+<!--Large Cars-->
+
+    <div class="cars collection-2" id="large-cars">
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/cruiser.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 110,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Accra</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Toyota Land Cruiser 2022</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/amg.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 94,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Kumasi</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Mercedes Benz AMG 2022</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/2022-range-rover-sv.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 89,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Sunyani</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Range Rover Sport 2022</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/bmw-2series.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 75,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Tema</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">BMW M2 Series 2020</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/2020-bmw-3-series-m340i-.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 79,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Accra</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">BMW m340i 2021</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car large-cars">
+            <div class="car-img-container">
+                <img src="./Assets/images/f150.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 64,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Accra</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Ford F150 2020</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+    </div>
+
+
+<!--Small Cars-->
+    <div class="cars collection-3" id="smallCars">
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/cruiser.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 110,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Accra</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Toyota Land Cruiser 2022</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/amg.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 94,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Kumasi</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Mercedes Benz AMG 2022</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/2022-range-rover-sv.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 89,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Sunyani</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Range Rover Sport 2022</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/bmw-2series.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 75,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Tema</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">BMW M2 Series 2020</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/2020-bmw-3-series-m340i-.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 79,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Accra</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">BMW m340i 2021</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car large-cars">
+            <div class="car-img-container">
+                <img src="./Assets/images/f150.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 64,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Accra</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Ford F150 2020</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+    </div>
+
+<!--Exclsuive Cars-->
+
+    <div class="cars collection-4" id="exclsuiveCars">
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/cruiser.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 110,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Accra</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Toyota Land Cruiser 2022</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/amg.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 94,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Kumasi</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Mercedes Benz AMG 2022</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/2022-range-rover-sv.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 89,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Sunyani</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Range Rover Sport 2022</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/bmw-2series.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 75,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Tema</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">BMW M2 Series 2020</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/2020-bmw-3-series-m340i-.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 79,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Accra</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">BMW m340i 2021</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car large-cars">
+            <div class="car-img-container">
+                <img src="./Assets/images/f150.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 64,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Accra</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Ford F150 2020</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="see-btn">
+        <button class="about-btn see-cars-btn"type="button">
+            See all cars
+            <i class="fa fa-arrow-right"></i>
+        </button>
+    </div>
 </section>
     </main>
-  
-  
-    <script src="./Stylesheets/main.js"></script>
+  <script src="./Stylesheets/main.js"></script>
 </body>
+<!--Footer Section-->
+<footer>
+    <section class="footer-section">
+        <div class="footer-nav">
+            <h1>Renty</h1>
+
+            <div class="footer-menu-bar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Resources</a></li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </div>
+        </div>
+        <p>&copy; Developed by Selasie Sepenu | 2023</p>
+    </section>
+</footer>
 </html>

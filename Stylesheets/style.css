@@ -194,10 +194,6 @@ button:hover .fa-apple
     margin-left: 1rem;
 }
 /**Our Services Style**/
-/* .our-services
-{
-  
-} */
 .our-services-content
 {
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Assets/images/milad-fakurian-DWYls-Utk9I-unsplash.jpg);
@@ -299,11 +295,15 @@ button:hover .fa-apple
     max-width: 64rem;
     margin-block: 2rem;
 }
-.collection-1
+.collection-1, .collection-2,.collection-3,.collection-4
 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 2rem;
+}
+.collection-2,.collection-3,.collection-4
+{
+    display: none;
 }
 .car
 {
@@ -396,14 +396,73 @@ button:hover .fa-apple
     display: inline;
     transition: 0.5s ease-in;
 }
-
-
-
-
-
-
-
-
+.see-btn
+{
+   max-width: 68rem;
+   margin-inline: auto;
+   padding-inline: 27rem;
+}
+.see-cars-btn
+{
+    padding-inline: 2rem;
+}
+/**Footer Section Styling**/
+.footer-section
+{
+    background-color: #1a1e23;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+}
+.footer-nav
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-inline: 4rem;
+    padding-top: 5rem;
+}
+.footer-nav h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: General Sans, sans-serif;
+}
+.footer-menu-bar ul
+{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-between;
+    list-style: none;
+}
+.footer-menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: General Sans, sans-serif;
+    font-size: 1rem;
+    font-weight: light;
+}
+.social-icons
+{
+    display: flex;
+    gap: 1.5rem;
+}
+.fa-facebook,.fa-instagram,.fa-twitter,.fa-linkedin
+{
+    color: #fff;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover
+{
+    color: #cd1d1d;
+    transform: scale(1.1);
+}
+.footer-section p{
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 3rem;
+}
 
 
 
@@ -586,5 +645,13 @@ button:hover .fa-apple
         gap: 0.5rem;
         margin-right: 1rem;
     }
-    
+    .see-btn{
+        padding-inline: 7rem;
+        margin-inline: 0rem;
+        max-width: 375px;
+    }
+    .see-cars-btn
+    {
+        padding: 0.5rem 1rem;
+    }
 }
