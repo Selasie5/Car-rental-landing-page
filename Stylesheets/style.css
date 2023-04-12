@@ -73,6 +73,7 @@ a:hover
 .transparent-background
 {
     display: none;
+    opacity: 0;
 }
 .mobile-nav
 {
@@ -407,7 +408,7 @@ button:hover .fa-apple
     padding-inline: 2rem;
 }
 /**Footer Section Styling**/
-.footer-section
+footer
 {
     background-color: #1a1e23;
     height: 30vh;
@@ -526,6 +527,8 @@ button:hover .fa-apple
         z-index: 1000;
         height: 100%;
          width: 100%;
+         opacity: 0;
+         transition: opacity 0.3s;
     }
     .mobile-nav-container
     {
@@ -654,4 +657,28 @@ button:hover .fa-apple
     {
         padding: 0.5rem 1rem;
     }
+    footer
+    {
+        position: relative;
+        margin-top: 90%;
+        height: 100vh !important;
+        background-size: cover;
+    }
+    .footer-section 
+    {
+        overflow: hidden;
+    }
+    .footer-section p
+    {
+       margin-top: 4rem; 
+    }
+    .footer-nav
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-menu-bar ul
+{
+    flex-direction: column;
+}
 }
