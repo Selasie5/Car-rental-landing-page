@@ -8,6 +8,10 @@
     <!--Stylesheets-->
     <link href="Stylesheets/style.css" type="text/css"rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--Animate On Scroll CDN-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 </head>
 <body>
  <!--Access Now-->
@@ -51,7 +55,7 @@
 </header>
     <main>
         <!--Hero Section-->
-  <section class="hero-section">
+  <section class="hero-section" data-aos="fade-right" data-aos-duration="1500">
     <div class="hero-content">
         <div class="hero-text">
         <h2>Search and find <br>your best car rental<br> the easy way</h2>
@@ -90,7 +94,7 @@
     </div>
 </section>
 <!--Services Section-->
-<section class="our-services" id="services">
+<section class="our-services" id="services" data-aos="fade-left" data-aos-duration="15000">
     <div class="our-services-content">
         <h3>Our Services</h3>
         <h2>We provide you with the most exclusive rental services</h2>
@@ -115,7 +119,7 @@
     </div>
 </section>
 <!--Car Collection Section-->
-<section class="collection-section" id="collectionsSection">
+<section class="collection-section" id="collectionsSection" data-aos="fade-up" data-aos-duration="15000">
     <div class="collection-header">
         <h3>Collection</h3>
         <h2>Our Collection Cars</h2>
@@ -836,8 +840,13 @@
             <p>&copy; Developed by Selasie Sepenu | 2023</p>
         </section>
     </footer>
+    <!--Scripts-->
   <script src="./Stylesheets/main.js"></script>
+  <!--AOS SCRIPTS-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"> </script>
+  <script>
+    AOS.init();
+  </script>
+ 
 </body>
-
-`
-</html>
+<html>
